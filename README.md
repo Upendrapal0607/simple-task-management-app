@@ -2,6 +2,13 @@
   task-management-destination
 ## Introduction
 Streamline task management with this platform. Effortlessly organize your tasks, saving you valuable time. Quickly log in or sign up to get started. Collaborate efficiently by adding multiple users to a single task. Get things done efficiently with this app.
+### Home Page 
+![Screenshot 2024-04-21 131419](https://github.com/Upendrapal0607/simple-task-management-app/assets/112810287/60032fc1-5aef-4d88-b71a-3fc698fc8d85)
+### Login page
+![Screenshot 2024-04-21 131353](https://github.com/Upendrapal0607/simple-task-management-app/assets/112810287/c081760b-1266-49dd-9d8c-6bdc88567519)
+### Task Page 
+![Screenshot 2024-04-21 131517](https://github.com/Upendrapal0607/simple-task-management-app/assets/112810287/4b63bdbb-bee4-47a4-8f86-4494284fa47d)
+
 ## Project Type
 It is a Fullstack (MERN base) project
 ## Deplolyed App
