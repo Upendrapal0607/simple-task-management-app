@@ -1,2 +1,2 @@
-export const UserUrl = "https://task-managment-backend-rosy.vercel.app/user";
-export const taskUrl = "https://task-managment-backend-rosy.vercel.app/task";
+export const UserUrl = "http://localhost:8080/user";
+export const taskUrl = "http://localhost:8080/task";

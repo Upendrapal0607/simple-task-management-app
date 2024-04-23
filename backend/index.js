@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.get("/", (req, res) => {
-  console.log({ body: req.body, query: req.query });
+
   try {
     res.status(200).json({ message: "welcome to task api" });
   } catch (error) {

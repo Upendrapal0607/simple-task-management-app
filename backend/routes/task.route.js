@@ -9,7 +9,7 @@ taskRoute.use(Auth);
 taskRoute.get("/", async (req, res) => {
   try {
     const {page, limit } = req.query;
-    console.log({page, limit});
+   
     const pageNumber = parseInt(page) || 1; // page come form query if not then by default 1
     const pageSize = parseInt(limit) || 12; // limit come form query if not then by default 12
     const totalTask = await TaskModel.countDocuments({userId: req.body.userId}); // it is use for count totle Movies
@@ -30,11 +30,8 @@ taskRoute.get("/", async (req, res) => {
 
 taskRoute.post("/addtask", async (req, res) => {
   const data = req.body;
-
-  const newTask = {...data,userId: req.userId};
   try {
-    const CreatedTask = new TaskModel(newTask);
-    console.log({ CreatedTask });
+    const CreatedTask = new TaskModel(data);
     await CreatedTask.save();
     res.status(200).json({ message: "task added" });
   } catch (error) {

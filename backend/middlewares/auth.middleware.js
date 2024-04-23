@@ -15,7 +15,7 @@ const Auth = async (req, res, next) => {
         jwt.verify(token, process.env.LOGIN_SECRET_KEY, (err, decode) => {
           if (decode) {
             console.log({decode});
-            req.userId = decode.userID;
+            req.body.userId = decode.userID;
             next();
           } else res.send({ message: "error accurse" });
         });
